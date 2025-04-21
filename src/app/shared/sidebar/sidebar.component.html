@@ -1,0 +1,33 @@
+    <!-- Sidebar mobile -->
+    <div class="flex h-screen">
+    <aside
+      class="sidebar fixed inset-y-0 left-0 bg-gray-800 text-white w-52 transform transition-transform duration-300 z-40 md:hidden"
+      [class.-translate-x-full]="!menuAberto"
+      [class.translate-x-0]="menuAberto"
+    >
+      <nav class="flex flex-col h-full justify-between px-4 pt-6 pb-4">
+        <div class="flex flex-col items-start justify-start space-y-6 text-xl">
+          <a href="#" (click)="fecharMenu.emit()">📁 Dashboard</a>
+          <a href="#" (click)="fecharMenu.emit()">👥 Usuários</a>
+          <a href="#" (click)="fecharMenu.emit()">💰 Financeiro</a>
+        </div>
+  
+        <div class="mt-auto text-xl">
+          <a href="#" (click)="fecharMenu.emit()">⚙️ Configurações</a>
+        </div>
+      </nav>
+    </aside>
+  
+    <!-- Sidebar desktop -->
+    <aside class="bg-gray-800 text-white w-20 hidden md:flex flex-col justify-between items-center py-6">
+      <div class="flex flex-col items-center space-y-6 text-2xl">
+        <a href="#">📁</a>
+        <a href="#">👥</a>
+        <a href="#">💰</a>
+      </div>
+      <div class="text-2xl">
+        <a href="#">⚙️</a>
+      </div>
+    </aside>
+    </div>
+  
