@@ -1,0 +1,8 @@
+<app-header (menuToggle)="toggleMenu()"></app-header>
+
+<main >
+    <app-sidebar [menuAberto]="menuAberto" (fecharMenu)="fecharMenuAoClicar()"></app-sidebar>
+  <div id="page">
+    <router-outlet />
+  </div>
+</main>

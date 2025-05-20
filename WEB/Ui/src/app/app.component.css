@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+main {
+  top: 3rem;
+  display: flex;
+}
+app-sidebar {
+  height: calc(100vh - 60px);
+  width: 18rem;
+  top: 60px;
+  z-index: 1;
+}
+#page {
+  padding: 1rem;
+  width: 100%;
+  margin-top: 60px;
+  position: relative;
+  overflow: auto;
+}

@@ -1,0 +1,25 @@
+    <!-- Sidebar mobile -->
+<aside
+  class="sidebar fixed inset-y-0 left-0 bg-gray-800 text-white w-52 transform transition-transform duration-300 z-40 "
+>
+  <nav class="flex flex-col h-full justify-between px-4 pt-6 pb-4">
+
+    <div class="flex flex-col items-start justify-start text-xl">
+      @for (item of links?.urls; track $index) {
+        @if(item.inNav){
+          <a [href]="item.endpoint" (click)="fecharMenu.emit()">
+            <mat-icon>{{item.icon}}</mat-icon>
+            <p>{{item.title}}</p>
+          </a>
+        }
+      }
+    </div>
+
+    <div class="mt-auto text-xl">
+      <a href="Login" (click)="fecharMenu.emit()">
+        <mat-icon>logout</mat-icon>
+        <p>logout</p>
+      </a>
+    </div>
+  </nav>
+</aside>

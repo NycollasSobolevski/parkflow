@@ -1,0 +1,62 @@
+.page_content {
+
+  section {
+    height: calc(50vh - 65px);
+
+    div {
+      display: flex;
+      /* width: 100%; */
+      height: 100%;
+      padding: 1rem;
+
+      .data_section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: .25rem;
+      }
+    }
+  }
+}
+.reference_car_container{
+  display: flex;
+  gap: 1rem;
+
+  span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 6rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+.user_data {
+  text-align: center;
+  width: 25rem !important;
+  img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+  }
+}
+.video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90rem;
+  height: 35vh;
+  overflow: hidden;
+  background-color: aqua;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  .title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: green;
+  }
+}
